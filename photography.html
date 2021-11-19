@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Neilsen Design | Strategic Visual Persuasion</title>
+      <link rel="shortcut icon" href="favicon.ico">
+      <link rel="stylesheet" type="text/css" href="/assets/stylesheets/styles.css">
+      <link rel="stylesheet" href="https://use.typekit.net/nvh4cls.css">
+      <script src="/assets/javascripts/script.js"></script>
+     <meta charset="utf-8"/>
+      <meta name="description" content="describes our website search results" />
+      <meta name="keywords" content="visual strategy, visual communication, persuasive communication, stephen neilsen, neilsen design, litigation, litigation graphics, courtroom presentations, trial experience" />
+   </head> 
+
+      <body>
+          <nav>
+       <nav class="navbar">
+             <img src="/assets/images/ND-small-logo.png"><a href="index.html">
+             <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+             <div class="navbar-links">
+                <ul>
+                  <li><a href="information-design.html">Information Design</a></li>
+                  <li><a href="illustration.html">Illustration</a></li>
+                  <li><a href="multimedia.html">Multimedia</a></li>
+                  <li><a href="photography.html">Photography</a></li>
+                  <li><a href="litigation.html">Litigation</a></li>
+                  <li><a href="index.html">Home</a></li>
+              </ul>
+            </nav>
+            <div>     
+           <div class="flexbox-one">
+              <div>
+              <img class="page-icons" src="assets/images/photo-icon.png"> 
+              <h2>Photography</h2>
+            </div>
+            <div class="icon-text">
+               <p>Almost everywhere you go you have been impacted by a photograph. You have either been the person behind the camera, the one posing, or the one staring at an advertisement in a magazine. The world of photography has changed dramatically in the past couple years and continues to change. The cameras on our phones, and ease of uploading our photos to the internet has made the number of images in our world explode. Marvin Heiferman explains that millions of photographic images are seen throughout the world and the number rises every day. Photography impacts us to the point that it is an important part of our lives in some aspect even if it’s different from one person to the next. Photography's extensive depth of possibilities and the enjoyment and need of images is clearly amazing (12).  Each of us has done something with a picture even if you don’t see yourself as a photographer. This shows us that photography is important.</p>
+            </div>
+         </div>
+                      <!-- The dots/circles -->
+                      <div style="margin-left: 25%;">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                      </div>
+                      <br> 
+            <div>
+           <div class="slideshow-container">
+
+               <div class="mySlides fade">
+                  <img src="assets/images/Grand Canyon.png" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="assets/images/Rocks_hero_resized.png" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="assets/images/Arches_resized.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                 <img src="assets/images/eiffel-2.JPG" style="width:100%">
+               </div>
+
+               <div class="mySlides fade">
+                  <img src="assets/images/paris-facade.JPG" style="width:100%">
+                </div>
+             
+               <div class="mySlides fade">
+                 <img src="assets/images/effel-1.jpg" style="width:100%">
+               </div>
+            
+               <!-- Next and previous buttons -->
+               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+               <a class="next" onclick="plusSlides(1)">&#10095;</a>
+             </div>
+          
+           
+
+         <div>
+            <textarea name="" id="scroll-text" cols="46" rows="38">INTELLECTUAL PROPERTY NOTICE
+                  
+               Neilsen Design will not, nor will it permit others to, remove, alter, cover or obscure any confidentiality, trade secret, proprietary or copyright notices, trademarks, proprietary, Intellectual Property Rights or other identifying marks or designs from any component of the Optimized Decoder Code including associated documentation and delivery media, and will replicate such notice within every copy or partial copy made.
+
+               LICENSEE will ensure that all copyright, patent, proprietary and trade secret notices of SureQuest will remain on the Software in any form and on all Licensed Materials.
+
+               MSL will not remove, modify or obscure any copyright, trademark, patent, or mask work notices that appear on the MS Software Image or related documentation as delivered to MSL.
+
+               Customer shall display on each Results Page containing a Local Search Results Set: (a) the intellectual property notices (e.g., copyright notices), legends or other proprietary notices as instructed by Google, and (b) a hyperlink from the mapping functionality of the Local Search Services to Maps Terms of Use (which include additional intellectual property notices required to be displayed) as further described in Section 4.3 herein.
+
+               LICENSEE shall reproduce and not remove or obscure any notice incorporated in the ARM Technology by ARM to protect ARM’s Intellectual Property or to acknowledge the Intellectual Property of any third party. LICENSEE shall incorporate and shall require that any Designer, Customer, Manufacturer and Test House to which any ARM Technology is provided in accordance with the terms of this Agreement, incorporates corresponding notices and such other markings and notifications as ARM may reasonably require on all copies of the ARM Technology and any derivatives thereof (including any translation, modification, compilation, abridgement or other form in which the ARM Technology has been recast, transformed or adapted) created by LICENSEE, Designer, Customer, Manufacturer or Test House, as the case may be.
+               Customer shall not remove any copyright, trademark or patent notices that appear on the Intellectual Property.
+            </textarea>
+            </div>
+               
+         <div>
+            <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1} 
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none"; 
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block"; 
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+         </div>
+         </body>
+</html>

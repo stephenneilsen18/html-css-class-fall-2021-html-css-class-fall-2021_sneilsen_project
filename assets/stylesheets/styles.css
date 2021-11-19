@@ -1,0 +1,489 @@
+body {
+  height: 100%;
+  viewport-fit: var(-50%);
+  background-color: #141414;
+  margin: 3%;
+  }
+
+.info-d-content {
+   display: grid;  
+  grid-template-rows: repeat(6, auto);
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2em;
+}
+
+.info-d-icon {
+  display: grid;
+  grid-area: 1 / 1 / 2 / span 3;
+  margin: 10%;
+  padding-left:5%;
+  column-gap: 2rem;
+}
+
+.info-d-content-text {
+  display: grid;
+  grid-area: 1 / 4 / 1 / 12;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: atten-new, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  text-align: left;
+  color: #ECCCCC;
+}
+
+.hero-img {
+    display: grid;
+    grid-area: 1 / 1 / 1 / span 12;
+    width: 100%;
+    height: auto;
+}
+
+aside {
+  display: grid;
+  grid-area: 1 / 1 / 2 / span 3;
+  background-color: #ECCCCC;
+  font-family: atten-new;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: left;
+  margin: 10%;
+  padding-left: 5%;
+  column-gap: 2rem;  
+}
+
+.flexbox-one {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between;
+  position: relative;
+  padding: 4%;
+  column-gap: 2rem; 
+} 
+
+.icon {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-evenly;
+} 
+
+.icon-text {
+  display: flex;
+}
+
+.img-1 {
+  width: 100%;
+  height: auto;
+  
+}
+
+/*SORTABLE TABLE*/
+table {
+  width: 90%;
+  border: 5px solid #ECCCCC;
+  border-collapse: collapse;
+  margin-left: 4%;
+}
+
+th {
+  background-color: #ECCCCC;
+  font-family: atten-new;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+  padding: 10px;
+  
+}
+
+td {
+  color: #ECCCCC;
+  padding: 15px;
+  font-family: atten-new;
+  font-size: 20px;
+  font-weight: 200;
+
+
+}
+
+/*VIDEO*/
+
+
+.video-flexbox {
+  display: flex; 
+  flex-direction:column; 
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+/* Style the buttons that are used to open and close the accordion panel*/
+.accordion {
+  display: flex;
+  flex-direction: row;
+  min-width: 900px;
+  background-color: rgb(20,20,20);
+  color: #ECCCCC;
+  cursor: pointer;
+  padding: 20px;
+  outline: none;
+  transition: 0.4s;
+  font-family: atten-new;
+  font-size: 24px;
+  font-style: bold;
+  text-align: center;
+  border-spacing: 2rem;
+  border-style: solid;
+  border-color: #ECCCCC;
+  border-width: 5px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ECCCCC;
+  color: rgb(20,20,20);
+  
+
+}
+
+/* Style the accordion panel. Note: hidden by default */
+
+.panel {
+  max-width: 900px;
+  background-color: rgb(20,20,20);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-family: atten-new;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: left;
+  color: #ECCCCC;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 18px;
+  color: #ECCCCC;
+ 
+  
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+
+/*navbar css*/
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #141414;
+padding: 1rem;
+position: sticky;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  font-family: atten-new, sans-serif;
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-links li:hover {
+  background-color: #555;
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* Index landing image css*/
+.parallax {
+  background-image: url(/assets/images/homepage-hero.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-row: 1 / 4;
+  grid-column: 1 / span 12;
+  height: 950px;
+  padding-top: 2rem;
+  z-index: 1;
+  }
+
+.overlay-content {
+    text-align: center;
+    position: relative;
+}
+.overlay-darken {
+  filter: brightness(65%);
+}
+.overlay-text {
+  position: absolute;
+  top: 52%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-family: atten-new;
+  font-weight: 700;
+  font-size: 50px;
+  color: #ECCCCC;
+  text-align: left;
+  z-index: 10;
+}
+.overlay-subtext {
+  position: absolute;
+  top: 58%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-family: atten-new;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 22px;
+  color: #ECCCCC; 
+  text-align: left; 
+  z-index: 20;
+}
+/* Text css*/
+h1 {
+  font-size: 30px;
+  font-family: atten-new, sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  color: #ECCCCC;
+  text-align: right;
+  padding: 2rem;   
+}
+
+h2 {
+  font-size: 30px;
+  font-family: atten-new, sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  color: #ECCCCC;
+  text-align: left;  
+}
+   
+p {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: atten-new, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  text-align: left;
+  color: #ECCCCC;
+}
+
+textarea {
+  position: absolute;
+  background-color:rgb(40, 40, 40);
+  color:white;
+  font-family:atten-new;
+  padding:15px;
+  border-width: 1rem;
+  border-color: #ECCCCC;
+}
+
+#scroll-text {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: atten-new, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  text-align: left;
+  color: #ECCCCC;
+}
+
+.gallery {
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap; 
+  align-items: middle;
+  padding-left: 4%;
+  row-gap: 8rem;
+  column-gap: 8rem;
+}
+
+
+
+/*SLIDE CAROUSEL*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 75%;
+  float: right;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0);
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 6px 6px;
+  background-color: rgb(80, 80, 80);
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  transition: background-color 0.6s ease; 
+}
+
+.active, .dot:hover {
+  background-color: #ECCCCC;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*TOGGLE BUTTON*/
+
+@media (max-width: 600px) {
+  
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-links li {
+    text-align: right;
+  }
+  .navbar-links li a {
+    padding: .5rem 1rem;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .flexbox-one {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 900px) {
+  .paragraph {
+    display: flex;
+}
+
+@media (min-width: 900px) {
+  .image {
+    width: 25%;
+    padding: 2rem;
+}   
+p {
+  padding: 1rem;
+}
+ 
+@media (min-width: 425px) {
+  p {
+    columns: 2;
+    column-width: 200px;
+    column-gap: 3.5rem;
+}
+
+    
+@media (min-width: 900px) {
+  p {
+    width: auto;
+    padding: 30px;
+    align-content: right;
+}
+
+@media screen and (max-width: 768px) {
+	.parallax_img {
+		background-attachment: inherit;
+	}
+
+  @media screen and (max-width: 800px) {
+    .column {
+      width: 100%;
+    }
+  }
+
